@@ -1,0 +1,35 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png"
+    },
+    {
+      "title": "JS",
+      "imageSrc": "skills/js.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/react.png"
+    },
+    {
+      "title": "BootStrap",
+      "imageSrc": "skills/bootstrap.png"
+    },
+    {
+      "title": "Git/GitHub",
+      "imageSrc": "skills/GitHub.png"
+    },
+    {
+      "title": "Figma",
+      "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "Excel",
+      "imageSrc": "skills/excel.png"
+    }
+  ]
+  
