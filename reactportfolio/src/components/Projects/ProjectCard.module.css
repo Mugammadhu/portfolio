@@ -10,7 +10,11 @@
 }
 .image{
     margin-bottom: 26px;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
 }
+
 .title{
     font-size: 25px;
     font-weight: 700;

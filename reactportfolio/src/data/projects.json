@@ -1,18 +1,18 @@
 [
     {
       "title": "Social Media App",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/social.png",
       "description": "This is a project made to learn the concepts of axios and React.",
       "skills": ["HTML","CSS","JS","REACT"],
-      "demo": "https://socialmediachat.netlify.app/",
+      "demo": "https://satesocialmedia-app.netlify.app/",
       "source": "https://github.com/Mugammadhu/social"
     },
     {
       "title": "Weather App",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/weather.png",
       "description": "This is a project made to learn the API",
       "skills": ["React", "HTML","CSS","JS"],
-      "demo": "https://curentweathercondition.netlify.app/",
+      "demo": "https://weather-checker-app1.netlify.app/",
       "source": "https://github.com/Mugammadhu/weather"
     },
     {
