@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "title":"PYTHON WORKSHOP",
+        "description":"2 days Python workshop conducted by Dr.M.G.R Educational and Research Institute",
+        "imageSrc":"certificate/python.png",
+        "document":"../../assets/certificate/pythonworkshop.pdf"
+    },
+    {
+        "id":2,
+        "title":"WEB DEVELOPMENT",
+        "description":"2 months web development course completed in InternShala in online",
+        "imageSrc":"certificate/webdevelopment.png",
+        "document":"../../assets/certificate/webdevelopment.pdf"
+    }
+]

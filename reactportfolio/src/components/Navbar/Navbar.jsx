@@ -24,6 +24,9 @@ export const Navbar = () => {
               <a href="#experience">Experience</a>
             </li>
             <li>
+              <a href="#Certificates">Certificates</a>
+            </li>
+            <li>
               <a href="#projects">Projects</a>
             </li>
             <li>

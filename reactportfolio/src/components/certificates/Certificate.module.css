@@ -1,0 +1,37 @@
+@import '../../vars.css';
+.certificate{
+    border-radius: 10px;
+    background: linear-gradient(180deg,#576cbc 0%,#132a53 100%);
+    box-shadow: 0 16px 14px 0 #04152d;
+    padding: 18px 24px;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    margin-bottom: 26px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.description{
+    margin-top: 6px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.pdf{
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-text);
+    font-weight: 600;
+    margin-top: 15px;
+    background-color: var(--color-primary);
+    padding:10px;
+    border-radius: 30px;
+    width: 265px;
+}

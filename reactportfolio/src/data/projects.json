@@ -1,27 +1,26 @@
 [
-    {
-      "title": "Social Media App",
-      "imageSrc": "projects/social.png",
-      "description": "This is a project made to learn the concepts of axios and React.",
-      "skills": ["HTML","CSS","JS","REACT"],
-      "demo": "https://satesocialmedia-app.netlify.app/",
-      "source": "https://github.com/Mugammadhu/social"
-    },
-    {
-      "title": "Weather App",
-      "imageSrc": "projects/weather.png",
-      "description": "This is a project made to learn the API",
-      "skills": ["React", "HTML","CSS","JS"],
-      "demo": "https://weather-checker-app1.netlify.app/",
-      "source": "https://github.com/Mugammadhu/weather"
-    },
-    {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
-  ]
-  
+  {
+    "title": "Social Media App",
+    "imageSrc": "projects/social.png",
+    "description": "This is a project made to learn the concepts of axios and React.",
+    "skills": ["HTML", "CSS", "JS", "REACT"],
+    "demo": "https://satesocialmedia-app.netlify.app/",
+    "source": "https://github.com/Mugammadhu/social"
+  },
+  {
+    "title": "Weather App",
+    "imageSrc": "projects/weather.png",
+    "description": "This is a project made to learn the API",
+    "skills": ["React", "HTML", "CSS", "JS"],
+    "demo": "https://weather-checker-app1.netlify.app/",
+    "source": "https://github.com/Mugammadhu/weather"
+  },
+  {
+    "title": "Currency Converter",
+    "imageSrc": "projects/currency.png",
+    "description": "This is a project is used to convert currency from one to another.This project helps to use the rest Api in react",
+    "skills": ["React", "JSX", "CSS"],
+    "demo": "https://currency-coverter212.netlify.app/",
+    "source": "https://github.com/Mugammadhu/CurrencyConverter"
+  }
+]
