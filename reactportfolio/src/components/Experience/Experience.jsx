@@ -1,6 +1,6 @@
 import skills from '../../data/skills.json'
 import { getImageUrl } from "../../utils";
-import history from '../../data/history.json';
+// import history from '../../data/history.json';
 import styles from './Experience.module.css'
 
 export const Experience = () => {
@@ -19,7 +19,7 @@ export const Experience = () => {
 })}
         </div>
 
-        <ul className={styles.history}>
+        {/* <ul className={styles.history}>
           {history.map((historyItem, id) => (
             <li key={id} className={styles.historyItem}>
               <img
@@ -37,7 +37,7 @@ export const Experience = () => {
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
       </div>
     </section>
@@ -53,3 +53,10 @@ export const Experience = () => {
 //   "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
 //   "imageSrc": "history/google.png"
 // }
+
+
+//for history
+//1.uncomment import
+//2.uncomment ul
+//3.uncomment obj and paste it in history.json
+//4.change the width of the skills in css 100 to 45%

@@ -4,7 +4,7 @@
     "imageSrc": "projects/social.png",
     "description": "This is a project made to learn the concepts of axios and React.",
     "skills": ["HTML", "CSS", "JS", "REACT"],
-    "demo": "https://satesocialmedia-app.netlify.app/",
+    "demo": "https://social-media-app122.netlify.app/",
     "source": "https://github.com/Mugammadhu/social"
   },
   {

@@ -19,7 +19,7 @@ flex-direction: row;
     margin-top: 14px;
 }
 .skills{
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 37px;
