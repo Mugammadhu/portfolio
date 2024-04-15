@@ -45,4 +45,11 @@ export const Experience = () => {
 };
 
 
-
+// {
+//   "role": "Software Engineer",
+//   "organization": "Google",
+//   "startDate": "Sept, 2022",
+//   "endDate": "Present",
+//   "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+//   "imageSrc": "history/google.png"
+// }

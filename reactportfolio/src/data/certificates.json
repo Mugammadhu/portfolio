@@ -4,13 +4,20 @@
         "title":"PYTHON WORKSHOP",
         "description":"2 days Python workshop conducted by Dr.M.G.R Educational and Research Institute",
         "imageSrc":"certificate/python.png",
-        "document":"../../assets/certificate/pythonworkshop.pdf"
+        "document":"https://publuu.com/flip-book/468212/1052858"
     },
     {
         "id":2,
         "title":"WEB DEVELOPMENT",
         "description":"2 months web development course completed in InternShala in online",
         "imageSrc":"certificate/webdevelopment.png",
-        "document":"../../assets/certificate/webdevelopment.pdf"
+        "document":"https://publuu.com/flip-book/468212/1052871"
+    },
+    {
+        "id":3,
+        "title":"Typing",
+        "description":"Completed an advanced typing test with an impressive 98% accuracy and a speed of 29 words per minute.",
+        "imageSrc":"certificate/typing.png",
+        "document":"https://publuu.com/flip-book/468212/1052882"
     }
 ]
