@@ -15,6 +15,24 @@
     text-decoration: none;
     color: var(--color-text);
 }
+.resume{
+    font-size: 25px;
+    color: var(--color-text);
+    background: transparent;
+    margin-top: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #00308F 0%, #0066b2 50%, #3457D5 100%);
+    border-radius:30px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.resume:hover{
+ background-size: 100% 100%;
+}
 .menu{
     display: flex;
 }
@@ -27,8 +45,17 @@
     text-decoration: none;
     font-size: 25px;
     color: var(--color-text);
+    background:  linear-gradient(90deg, #00308F 0%, #0066b2 50%, #3457D5 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
 }
-
+.menuItems a:hover{
+    background-size: 100% 100%;
+}
 @media screen and (max-width:830px){
    .navbar{
     flex-direction: column;
@@ -48,17 +75,15 @@
     cursor: pointer;
    }
    .menuItems{
-    
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 13px;
+    gap: 25px;
     border-radius: 10px;
     background: rgb(25, 25, 109);
     background: linear-gradient(0deg, rgba(25,25,109,0.2)0%,rgba(25,25,109,1)100% );
     padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
-    
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25); 
    }
    .menuOpen{
     display: flex;
@@ -66,8 +91,15 @@
    }
 }
 @media screen and (min-width:830px){
+    .menuItems{
+        
+    }
     .menuBtn{
         display: none;
-    }    
+    } 
+    .resume{
+        margin-top: 0;
+    }   
+    
 }
     
