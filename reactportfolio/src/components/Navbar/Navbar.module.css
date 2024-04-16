@@ -91,9 +91,6 @@
    }
 }
 @media screen and (min-width:830px){
-    .menuItems{
-        
-    }
     .menuBtn{
         display: none;
     } 
