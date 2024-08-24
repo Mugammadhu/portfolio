@@ -3,7 +3,7 @@ import { ProjectCard } from './ProjectCard';
 import styles from './Projects.module.css'
 
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <section id='projects' className={styles.container}>
         <h2 className={styles.title}>
@@ -19,3 +19,4 @@ export const Projects = () => {
     </section>
   )
 }
+export default Projects;

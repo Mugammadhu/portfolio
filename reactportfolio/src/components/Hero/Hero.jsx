@@ -3,7 +3,7 @@
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils.js";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -15,7 +15,7 @@ export const Hero = () => {
         <h3 className={styles.contactTitle}>Contact</h3>
         <div className={styles.contact}>
           <a
-            href="mailto:mugammadhuoff@gmail.com"
+            href="mailto:mugammadhu.sate@gmail.com"
             className={styles.contactEmailBtn}
           >
             Email
@@ -35,3 +35,4 @@ export const Hero = () => {
     </section>
   );
 };
+export default Hero;

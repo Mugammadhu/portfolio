@@ -14,6 +14,8 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
+    margin-right: 20px;
+    margin-top: -2px;
 }
 .resume{
     font-size: 25px;

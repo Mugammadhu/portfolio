@@ -30,6 +30,7 @@
     animation-iteration-count: infinite;
     box-shadow:  0 0 0 #000;
     border-radius: 50%;
+    margin-right: 20px;
 }
 @keyframes rotate {
     from{
@@ -70,11 +71,11 @@
     
 }
 .aboutItem h3{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
 }
 .aboutItem p{
-    font-size: 25px;
+    font-size: 21px;
 }
 span a{
     text-decoration: none;

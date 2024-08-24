@@ -1,23 +1,39 @@
 [
-    {
-        "id":1,
-        "title":"PYTHON WORKSHOP",
-        "description":"2 days Python workshop conducted by Dr.M.G.R Educational and Research Institute",
-        "imageSrc":"certificate/python.png",
-        "document":"https://publuu.com/flip-book/468212/1052858"
-    },
-    {
-        "id":2,
-        "title":"WEB DEVELOPMENT",
-        "description":"2 months web development course completed in InternShala in online",
-        "imageSrc":"certificate/webdevelopment.png",
-        "document":"https://publuu.com/flip-book/468212/1052871"
-    },
-    {
-        "id":3,
-        "title":"Typing",
-        "description":"Completed an advanced typing test with an impressive 98% accuracy and a speed of 29 words per minute.",
-        "imageSrc":"certificate/typing.png",
-        "document":"https://publuu.com/flip-book/468212/1052882"
-    }
+  {
+    "id": 1,
+    "title": "INTERNSHIP",
+    "description": "Completed a 1-month virtual internship at ShadowFox, where I learned to host websites online.",
+    "imageSrc": "certificate/webInternship.jpg",
+    "document": "https://drive.google.com/file/d/1IJuK6sBGdaM8pXCBTZdFgmiirTTLXm00/view?usp=sharing"
+  },
+  {
+    "id": 2,
+    "title": "WEB DEVELOPMENT",
+    "description": "2 months web development course completed in InternShala in online.",
+    "imageSrc": "certificate/webdevelopment.png",
+    "document": "https://drive.google.com/file/d/1Xp4Yd5Bfa9-74VAsgtrQNWfdFR1ngOr2/view?usp=sharing"
+  },
+
+  {
+    "id": 3,
+    "title": "PYTHON WORKSHOP",
+    "description": "2 days Python workshop conducted by Dr.M.G.R Educational and Research Institute.",
+    "imageSrc": "certificate/python.png",
+    "document": "https://drive.google.com/file/d/1ZtRX6AoDZBIu-_dLg9SJBMCiCxs1tUu7/view?usp=sharing"
+  },
+  {
+    "id": 4,
+    "title": "Job Preparation",
+    "description": "Completed a 4-week online training on Internship & Job Preparation.",
+    "imageSrc": "certificate/Job_Preparation_Training.png",
+    "document": "https://drive.google.com/file/d/1JXL3Yii2V1O6eilMF8-W67Qm3Dkx4Q2e/view?usp=sharing"
+  },
+
+  {
+    "id": 5,
+    "title": "Typing",
+    "description": "Completed an advanced typing test with an impressive 98% accuracy and a speed of 29 words per minute.",
+    "imageSrc": "certificate/typing.png",
+    "document": "https://drive.google.com/file/d/1isjWunQDfiK1amjOjqSQfKYoW3rwlMlD/view?usp=sharing"
+  }
 ]

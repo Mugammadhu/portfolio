@@ -1,5 +1,13 @@
 [
   {
+    "title": "IPL Website",
+    "imageSrc": "projects/IPL.png",
+    "description": "This website was  developed  as part of my internship at ShadowFox using FrontEnd Concepts.",
+    "skills": ["HTML", "CSS", "JS", "REACT", "BOOTSTRAP"],
+    "demo": "https://iplfanclub.netlify.app/",
+    "source": "https://github.com/Mugammadhu/Shadowfox_ipl"
+  },
+  {
     "title": "Social Media App",
     "imageSrc": "projects/social.png",
     "description": "This is a project made to learn the concepts of axios and React.",
@@ -10,7 +18,7 @@
   {
     "title": "Weather App",
     "imageSrc": "projects/weather.png",
-    "description": "This is a project made to learn the API",
+    "description": "This is a created using HTML,CSS,REACT.JS to get current weather.",
     "skills": ["React", "HTML", "CSS", "JS"],
     "demo": "https://weather-checker-app1.netlify.app/",
     "source": "https://github.com/Mugammadhu/weather"

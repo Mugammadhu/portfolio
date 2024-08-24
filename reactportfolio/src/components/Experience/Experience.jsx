@@ -1,22 +1,28 @@
-import skills from '../../data/skills.json'
+import skills from "../../data/skills.json";
 import { getImageUrl } from "../../utils";
 // import history from '../../data/history.json';
-import styles from './Experience.module.css'
+import styles from "./Experience.module.css";
 
-export const Experience = () => {
+const Experience = () => {
   return (
     <section id="experience" className={styles.container}>
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
-        
-        <div className={styles.skills}>
-          {skills.map((skill, id) => { return(            <div key={id} className={styles.skill}>
-              <div className={styles.skillImageContainer}>
-                <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+        <div className={styles.skills }>
+          {skills.map((skill, id) => {
+            const levelClass = skill.level === "Advanced" ? "advanced" : skill.level === "Intermediate" ? "intermediate" : "beginner";
+
+
+            return (
+              <div key={id} className={styles.skill }>
+                <div className={`${styles.skillImageContainer} ${styles[levelClass]}`} >
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                </div>
+                <p>{skill.title}</p>
+                
               </div>
-              <p>{skill.title}</p>
-            </div>)
-})}
+            );
+          })}
         </div>
 
         {/* <ul className={styles.history}>
@@ -38,12 +44,10 @@ export const Experience = () => {
             </li>
           ))}
         </ul> */}
-
       </div>
     </section>
   );
 };
-
 
 // {
 //   "role": "Software Engineer",
@@ -54,9 +58,10 @@ export const Experience = () => {
 //   "imageSrc": "history/google.png"
 // }
 
-
 //for history
 //1.uncomment import
 //2.uncomment ul
 //3.uncomment obj and paste it in history.json
 //4.change the width of the skills in css 100 to 45%
+
+export default Experience;

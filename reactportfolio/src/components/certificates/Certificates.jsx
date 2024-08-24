@@ -3,7 +3,7 @@ import { Certificate } from "./Certificate"
 import styles from './Certificates.module.css'
 
 
-export const Certificates = () => {
+const Certificates = () => {
   return (
     <main className={styles.container} id="Certificates">
         <h2 className={styles.title}>Certificates</h2>
@@ -18,3 +18,5 @@ export const Certificates = () => {
     </main>
   )
 }
+
+export default Certificates;
