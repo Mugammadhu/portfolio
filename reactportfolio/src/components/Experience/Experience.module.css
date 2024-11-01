@@ -4,10 +4,21 @@
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .title {
   color: var(--color-text);
   font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+.subTitle{
+  color: var(--color-text);
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -23,6 +34,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
+}
+.MainSkill{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+.skillItem{
+  display: flex;
+  gap: 37px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 .skill {
   display: flex;

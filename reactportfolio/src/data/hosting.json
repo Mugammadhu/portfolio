@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Git/GitHub",
+    "imageSrc": "skills/GitHub.svg",
+    "level": "Advanced"
+  },
+  {
+    "title": "Netlify",
+    "imageSrc": "skills/netlify.svg",
+    "level": "Advanced"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.svg",
+    "level": "Advanced"
+  },
+  {
+    "title": "Vercel",
+    "imageSrc": "skills/vercel.svg",
+    "level": "Advanced"
+  }
+]

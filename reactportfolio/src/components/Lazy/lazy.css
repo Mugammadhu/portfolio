@@ -1,14 +1,21 @@
-.lazy_div{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    gap: 30px;
-    background-color: #101751;
-    color: #fff;
+.lazy_div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 30px;
+  background-color: #101751;
+  color: #fff;
 }
-.lazy_img{
-   border-radius: 20px;
+.lazy_img {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 830px) {
+  .lazy_img {
+    width: 50%;
+    height: 50%;
+  }
 }

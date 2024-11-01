@@ -1,5 +1,10 @@
-import skills from "../../data/skills.json";
+import tools from "../../data/tools.json";
 import { getImageUrl } from "../../utils";
+import languages from "../../data/languages.json";
+import Ui from "../../data/Ui.json"
+import hosting from "../../data/hosting.json"
+import seo from "../../data/seo.json"
+import design from "../../data/design.json"
 // import history from '../../data/history.json';
 import styles from "./Experience.module.css";
 
@@ -8,8 +13,129 @@ const Experience = () => {
     <section id="experience" className={styles.container}>
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
-        <div className={styles.skills }>
-          {skills.map((skill, id) => {
+        <div className={styles.skills}>
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>Languages & Frameworks</h2>
+            <div className={styles.skillItem}>
+              {languages.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>UI & FRAMEWORKS</h2>
+            <div className={styles.skillItem}>
+              {Ui.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>Version Control & Hosting</h2>
+            <div className={styles.skillItem}>
+              {hosting.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>WEB ACCESSIBILITY & SEO</h2>
+            <div className={styles.skillItem}>
+              {seo.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>Tools</h2>
+            <div className={styles.skillItem}>
+              {tools.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+
+          <div className={styles.MainSkill}>
+            <h2 className={styles.subTitle}>Design & Content Management</h2>
+            <div className={styles.skillItem}>
+              {design.map((language, id) => {
+                return (
+                  <div key={id} className={styles.skill}>
+                    <div className={`${styles.skillImageContainer}`}>
+                      <img
+                        src={getImageUrl(language.imageSrc)}
+                        alt={language.title}
+                      />
+                    </div>
+                    <p>{language.title}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+         
+        </div>
+
+         {/* {skills.map((skill, id) => {
             const levelClass = skill.level === "Advanced" ? "advanced" : skill.level === "Intermediate" ? "intermediate" : "beginner";
 
 
@@ -22,8 +148,7 @@ const Experience = () => {
                 
               </div>
             );
-          })}
-        </div>
+          })} */}
 
         {/* <ul className={styles.history}>
           {history.map((historyItem, id) => (

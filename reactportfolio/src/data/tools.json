@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Vite",
+    "imageSrc": "skills/vite.svg"
+  },
+  {
+    "title": "Webpack",
+    "imageSrc": "skills/webpack.svg"
+  },
+  {
+    "title": "Jest",
+    "imageSrc": "skills/jest.svg"
+  },
+  {
+    "title": "Vitest",
+    "imageSrc": "skills/vitest.svg"
+  },
+  {
+    "title": "Testing Library",
+    "imageSrc": "skills/reactlib.svg"
+  }
+]

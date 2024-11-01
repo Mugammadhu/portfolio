@@ -10,7 +10,7 @@ const Navbar = () => {
         Portfolio
       </a>
       <a
-        href="https://drive.google.com/file/d/1Hcq0OLk-LJWkuzg7dGL7yg3Od86s8Pqf/view?usp=sharing"
+        href="https://drive.google.com/file/d/1nMkzxNUesPuiCSZuQLq-dN7BDl9aK0FW/view?usp=sharing"
         target="_blank"
         className={styles.resume}
       >

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "BootStrap",
+        "imageSrc": "skills/bootstrap.svg",
+        "level":"Advanced"
+      },
+      {
+        "title": "Tailwind",
+        "imageSrc": "skills/tailwind.svg",
+        "level":"Advanced"
+      },
+      {
+        "title": "Saas",
+        "imageSrc": "skills/saas.svg",
+        "level":"Intermediate"
+      },
+      {
+        "title": "BEM",
+        "imageSrc": "skills/bem.svg",
+        "level":"Advanced"
+      }
+]
