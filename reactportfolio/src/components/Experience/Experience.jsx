@@ -1,192 +1,156 @@
+import { motion } from "framer-motion";
 import tools from "../../data/tools.json";
 import { getImageUrl } from "../../utils";
 import languages from "../../data/languages.json";
-import Ui from "../../data/Ui.json"
-import hosting from "../../data/hosting.json"
-import seo from "../../data/seo.json"
-import design from "../../data/design.json"
-// import history from '../../data/history.json';
+import Ui from "../../data/Ui.json";
+import hosting from "../../data/hosting.json";
 import styles from "./Experience.module.css";
 
 const Experience = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  };
+
+  const skillHoverVariants = {
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.2
+      }
+    }
+  };
+
   return (
     <section id="experience" className={styles.container}>
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>Languages & Frameworks</h2>
-            <div className={styles.skillItem}>
-              {languages.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>UI & FRAMEWORKS</h2>
-            <div className={styles.skillItem}>
-              {Ui.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>Version Control & Hosting</h2>
-            <div className={styles.skillItem}>
-              {hosting.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>WEB ACCESSIBILITY & SEO</h2>
-            <div className={styles.skillItem}>
-              {seo.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>Tools</h2>
-            <div className={styles.skillItem}>
-              {tools.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-
-          <div className={styles.MainSkill}>
-            <h2 className={styles.subTitle}>Design & Content Management</h2>
-            <div className={styles.skillItem}>
-              {design.map((language, id) => {
-                return (
-                  <div key={id} className={styles.skill}>
-                    <div className={`${styles.skillImageContainer}`}>
-                      <img
-                        src={getImageUrl(language.imageSrc)}
-                        alt={language.title}
-                      />
-                    </div>
-                    <p>{language.title}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-         
-        </div>
-
-         {/* {skills.map((skill, id) => {
-            const levelClass = skill.level === "Advanced" ? "advanced" : skill.level === "Intermediate" ? "intermediate" : "beginner";
-
-
-            return (
-              <div key={id} className={styles.skill }>
-                <div className={`${styles.skillImageContainer} ${styles[levelClass]}`} >
-                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-                
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={containerVariants}
+        className={styles.wrapper}
+      >
+        <motion.h2 variants={itemVariants} className={styles.title}>
+          Experience & Skills
+        </motion.h2>
+        
+        <div className={styles.content}>
+          {/* Work Experience */}
+          <div className={styles.workExperience}>
+            <motion.div 
+              className={styles.historyItem}
+              whileHover={{ scale: 1.02 }}
+              variants={itemVariants}
+            >
+              <div className={styles.historyImageContainer}>
+                <img
+                  src={getImageUrl("history/intern.jpg")}
+                  alt="ShadowFox Logo"
+                />
               </div>
-            );
-          })} */}
-
-        {/* <ul className={styles.history}>
-          {history.map((historyItem, id) => (
-            <li key={id} className={styles.historyItem}>
-              <img
-                src={getImageUrl(historyItem.imageSrc)}
-                alt={`${historyItem.organization} Logo`}
-              />
               <div className={styles.historyItemDetails}>
-                <h3>{`${historyItem.role},${historyItem.organization}`}</h3>
-                <p>{`${historyItem.startDate},${historyItem.endDate}`}</p>
+                <h3>Web Development Intern <span>@ ShadowFox</span></h3>
+                <p className={styles.duration}>Apr 2024 - May 2024 (1 month)</p>
                 <ul>
-                    {historyItem.experiences.map((experience,id)=>(
-                        <li key={id}>{experience}</li>
-                    ))}
+                  <li><span className={styles.bullet}>•</span> Developed demo IPL website with live scores</li>
+                  <li><span className={styles.bullet}>•</span> Built responsive UI with React and CSS</li>
+                  <li><span className={styles.bullet}>•</span> Implemented API integrations</li>
                 </ul>
+                <div className={styles.skillsUsed}>
+                  <span className={styles.skillBadge}>React</span>
+                  <span className={styles.skillBadge}>JavaScript</span>
+                  <span className={styles.skillBadge}>CSS3</span>
+                  <span className={styles.skillBadge}>API Integration</span>
+                </div>
               </div>
-            </li>
-          ))}
-        </ul> */}
-      </div>
+            </motion.div>
+          </div>
+
+          {/* Skills Grid - 2 columns */}
+          <div className={styles.skillsGrid}>
+            <SkillCategory 
+              title="Core Technologies" 
+              skills={languages} 
+              variants={itemVariants}
+              hoverVariants={skillHoverVariants}
+            />
+            
+            <SkillCategory 
+              title="UI Frameworks" 
+              skills={Ui} 
+              variants={itemVariants}
+              hoverVariants={skillHoverVariants}
+            />
+            
+            <SkillCategory 
+              title="Development Tools" 
+              skills={tools} 
+              variants={itemVariants}
+              hoverVariants={skillHoverVariants}
+            />
+            
+            <SkillCategory 
+              title="Hosting & Version Control" 
+              skills={hosting} 
+              variants={itemVariants}
+              hoverVariants={skillHoverVariants}
+            />
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
 
-// {
-//   "role": "Software Engineer",
-//   "organization": "Google",
-//   "startDate": "Sept, 2022",
-//   "endDate": "Present",
-//   "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-//   "imageSrc": "history/google.png"
-// }
-
-//for history
-//1.uncomment import
-//2.uncomment ul
-//3.uncomment obj and paste it in history.json
-//4.change the width of the skills in css 100 to 45%
+const SkillCategory = ({ title, skills, variants, hoverVariants }) => {
+  return (
+    <motion.div variants={variants} className={styles.skillCategory}>
+      <h3 className={styles.skillTitle}>{title}</h3>
+      <div className={styles.skillsContainer}>
+        {skills.map((skill, id) => (
+          <motion.div 
+            key={id} 
+            className={styles.skillItem}
+            variants={variants}
+            whileHover="hover"
+          >
+            <div className={`${styles.skillIcon} ${skill.level ? styles[skill.level.toLowerCase()] : ''}`}>
+              <img
+                src={getImageUrl(skill.imageSrc)}
+                alt={skill.title}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.skillInfo}>
+              <div className={styles.skillName}>{skill.title}</div>
+              {skill.level && (
+                <div className={`${styles.skillLevel} ${styles[skill.level.toLowerCase()]}`}>
+                  {skill.level}
+                </div>
+              )}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
 
 export default Experience;

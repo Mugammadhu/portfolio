@@ -1,60 +1,273 @@
 @import '../../vars.css';
 
-.container{
+.container {
     color: var(--color-text);
     margin-top: 120px;
     background-color: var(--color-secondary);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     width: 100vw;
     padding: 58px 10%;
-    gap: 10px;
+    gap: 40px;
+    position: relative; 
+    /* Added for positioning */
+    padding-bottom: 200px;
 }
-.text h2{
+
+.text {
+    width: 100%;
+    position: relative; /* For positioning the form */
+}
+
+.text h2 {
     font-size: 80px;
     font-weight: 400;
     letter-spacing: 4px;
+    margin-bottom: 20px;
+    display: inline-block; /* Allows form to sit beside */
 }
-.text p{
+
+
+.text p {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 2px;
 }
-.links{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
+.link a {
+    font-size: 28px; /* or whatever size you prefer */
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 12px;
 }
 .link{
     display: flex;
     align-items: center;
-    gap: 25px;
 }
-.link a{
-    text-decoration: none;
+.link{
+    margin-bottom: 10px;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin-top: 60px; /* Added space between title and content */
+}
+
+/* Updated Form Styles */
+.formContainer {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute; /* Changed to absolute */
+    right: 10%; /* Matches container padding */
+    top: 80px; /* Adjust to align with title */
+    max-width: 600px; /* Prevent form from being too wide */
+}
+
+.formTitle {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     color: var(--color-text);
-    font-size:30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
 }
-@media screen and (max-width:830px){
- .container{
-    flex-direction: column;
-    gap: 23px;
- }   
- .text{
+
+.formTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--color-primary);
+}
+
+.form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formLabel {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+.formControl {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-text);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.formControl:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.errorText {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.submitWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitButton {
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background: var(--color-primary);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.submitButton:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Alert Styles */
+.alert {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     text-align: center;
- }
- .links{
-    align-items: center;
- }
- .link a{
-    font-size: 23px;
- }
+    font-weight: bold;
+}
+
+.success {
+    background: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+
+.error {
+    background: rgba(220, 53, 69, 0.2);
+    border: 1px solid #dc3545;
+    color: #dc3545;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .links  {
+        width: 100%;
+        max-width: 700px;
+    }
+        .formContainer {
+        position: static; /* Back to normal flow on smaller screens */
+        width: 100%;
+        max-width: 700px;
+        margin-top: 40px; /* Added space when stacked */
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column;
+        gap: 23px;
+        padding: 40px 5%;
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    
+    .text h2 {
+        font-size: 60px;
+    }
+    
+    .text p {
+        font-size: 30px;
+    }
+    
+    .links {
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .link a {
+        font-size: 23px;
+    }
+    
+    .link img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .formTitle {
+        font-size: 2rem;
+    }
+    
+    .formLabel {
+        font-size: 1rem;
+    }
+    
+    .formControl {
+        padding: 12px;
+    }
+    
+    .submitButton {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text h2 {
+        font-size: 40px;
+    }
+    
+    .text p {
+        font-size: 20px;
+    }
+    
+    .link a {
+        font-size: 18px;
+    }
+    
+    .link img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .formContainer {
+        padding: 20px;
+    }
 }

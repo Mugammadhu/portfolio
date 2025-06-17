@@ -13,16 +13,23 @@
     "imageSrc": "certificate/webdevelopment.png",
     "document": "https://drive.google.com/file/d/1Xp4Yd5Bfa9-74VAsgtrQNWfdFR1ngOr2/view?usp=sharing"
   },
+    {
+    "id": 3,
+    "title": "Web Based Technologies and Multimedia Applications",
+    "description": "12-week online program by NPTEL (IITs/IGNOU) with proctored exam.",
+    "imageSrc": "certificate/nptl.png",
+    "document": "https://drive.google.com/file/d/1fRfiLP_cX2iLajTfRmaeYmanSvUX85TL/view?usp=sharing"
+  },
 
   {
-    "id": 3,
+    "id": 4,
     "title": "PYTHON WORKSHOP",
     "description": "2 days Python workshop conducted by Dr.M.G.R Educational and Research Institute.",
     "imageSrc": "certificate/python.png",
     "document": "https://drive.google.com/file/d/1ZtRX6AoDZBIu-_dLg9SJBMCiCxs1tUu7/view?usp=sharing"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Job Preparation",
     "description": "Completed a 4-week online training on Internship & Job Preparation.",
     "imageSrc": "certificate/Job_Preparation_Training.png",
@@ -30,7 +37,7 @@
   },
 
   {
-    "id": 5,
+    "id": 6,
     "title": "Typing",
     "description": "Completed an advanced typing test with an impressive 98% accuracy and a speed of 29 words per minute.",
     "imageSrc": "certificate/typing.png",

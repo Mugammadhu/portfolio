@@ -1,34 +1,60 @@
 [
   {
-    "title": "IPL Website",
-    "imageSrc": "projects/IPL.png",
-    "description": "This website was  developed  as part of my internship at ShadowFox using FrontEnd Concepts.",
+    "title": "Phishing Detection Website",
+    "imageSrc": "projects/phishing.webp",
+    "description": "MERN stack application with Python ML integration for real-time phishing URL detection and analysis.",
+    "skills": ["HTML", "CSS", "React", "Node.js", "Express", "MongoDB", "Python", "Machine Learning"],
+    "demo": "https://phishing-detection.netlify.app/",
+    "source": "https://github.com/Mugammadhu/Phishing.git"
+  },
+    {
+    "title": "Saas Tenant Management Website",
+    "imageSrc": "projects/saas.jpg",
+    "description": "Full-featured SaaS platform built with MERN stack featuring multi-tenant architecture and automated billing.",
+    "skills": ["React", "Node.js", "Express", "MongoDB", "JWT Auth", "Stripe API"],
+    "demo": "https://saas-tenanat.netlify.app/",
+    "source": "https://github.com/Mugammadhu/saas.git"
+  },
+    {
+    "title": "Clone IPL Demo Website",
+    "imageSrc": "projects/ipl.jpg",
+    "description": "This website was developed as part of my internship at ShadowFox using FrontEnd Concepts.",
     "skills": ["HTML", "CSS", "JS", "REACT", "BOOTSTRAP"],
     "demo": "https://iplfanclub.netlify.app/",
     "source": "https://github.com/Mugammadhu/Shadowfox_ipl"
   },
+      {
+    "title": "Online Product Price Comparison Website",
+    "imageSrc": "projects/price.png",
+    "description": "Frontend-only application deployed on Netlify for comparing product prices across multiple retailers.",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Netlify"],
+    "demo": "https://price-review.netlify.app/",
+    "source": "https://github.com/Mugammadhu/price-comparision.git"
+  },
   {
-    "title": "Social Media App",
+    "title": "Social Media Platform",
     "imageSrc": "projects/social.png",
-    "description": "This is a project made to learn the concepts of axios and React.",
-    "skills": ["HTML", "CSS", "JS", "REACT"],
+    "description": "A React-based social media application featuring user authentication, post creation with images, comments, and likes. Implemented RESTful API integration using Axios for seamless data fetching.",
+    "skills": ["HTML", "CSS", "JS", "REACT","Netlify"],
     "demo": "https://social-media-app122.netlify.app/",
     "source": "https://github.com/Mugammadhu/social"
   },
   {
-    "title": "Weather App",
-    "imageSrc": "projects/weather.png",
-    "description": "This is a created using HTML,CSS,REACT.JS to get current weather.",
-    "skills": ["React", "HTML", "CSS", "JS"],
+    "title": "Weather Forecast Application",
+    "imageSrc": "projects/weather.webp",
+    "description": "Location-based weather forecasting tool with 5-day predictions and severe weather alerts.",
+    "skills": ["React", "HTML", "CSS", "JS","OpenWeather API", "Geolocation", "Responsive Design"],
     "demo": "https://weather-checker-app1.netlify.app/",
     "source": "https://github.com/Mugammadhu/weather"
   },
   {
     "title": "Currency Converter",
-    "imageSrc": "projects/currency.png",
-    "description": "This is a project is used to convert currency from one to another.This project helps to use the rest Api in react",
-    "skills": ["React", "JSX", "CSS"],
+    "imageSrc": "projects/currency.webp",
+    "description": "Real-time foreign exchange application with support for 150+ global currencies. Features include historical rate charts (7-day/30-day views), conversion calculator, and favorite currency pairs.",
+    "skills": ["React", "HTML", "CSS", "ExchangeRate API", "Error Handling", "Local Storage"],
     "demo": "https://currency-coverter212.netlify.app/",
     "source": "https://github.com/Mugammadhu/CurrencyConverter"
   }
 ]
+
+

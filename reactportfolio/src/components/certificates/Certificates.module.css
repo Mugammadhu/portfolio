@@ -1,24 +1,56 @@
 @import '../../vars.css';
 
-.container{
-    color: var(--color-text);
-    margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+.container {
+  color: var(--color-text);
+  padding: 100px 10%;
+  background: linear-gradient(180deg, #0c2a5c 0%, #1a3a7a 100%);
+  position: relative;
+  overflow: hidden;
 }
-.title{
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+
+.title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
 }
-.certificates{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 20px;
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--color-primary);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 80px 5%;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .certificates {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
 }

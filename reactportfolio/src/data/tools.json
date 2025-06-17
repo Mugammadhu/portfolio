@@ -1,22 +1,32 @@
 [
   {
     "title": "Vite",
-    "imageSrc": "skills/vite.svg"
+    "imageSrc": "skills/vite.svg",
+    "level": "Advanced"
   },
   {
     "title": "Webpack",
-    "imageSrc": "skills/webpack.svg"
+    "imageSrc": "skills/webpack.svg",
+    "level": "Beginner"
   },
   {
     "title": "Jest",
-    "imageSrc": "skills/jest.svg"
+    "imageSrc": "skills/jest.svg",
+    "level": "Intermediate"
   },
   {
     "title": "Vitest",
-    "imageSrc": "skills/vitest.svg"
+    "imageSrc": "skills/vitest.svg",
+    "level": "Intermediate"
   },
   {
     "title": "Testing Library",
-    "imageSrc": "skills/reactlib.svg"
+    "imageSrc": "skills/reactlib.svg",
+    "level": "Intermediate"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.png",
+    "level": "Intermediate"
   }
 ]

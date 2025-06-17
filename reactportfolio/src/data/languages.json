@@ -1,18 +1,28 @@
 [
     {
         "title": "HTML",
-        "imageSrc": "skills/html.svg"
+        "imageSrc": "skills/html.svg",
+        "level": "Advanced"
       },
       {
         "title": "CSS",
-        "imageSrc": "skills/css.svg"
+        "imageSrc": "skills/css.svg",
+            "level": "Advanced"
       },
       {
         "title": "JS",
-        "imageSrc": "skills/js.svg"
+        "imageSrc": "skills/js.svg",
+            "level": "Intermediate"
       },
       {
         "title": "React",
-        "imageSrc": "skills/react.svg"
+        "imageSrc": "skills/react.svg",
+            "level": "Advanced"
+      },
+       {
+        "title": "Java",
+        "imageSrc": "skills/java.png",
+            "level": "Intermediate"
       }
+
 ]
