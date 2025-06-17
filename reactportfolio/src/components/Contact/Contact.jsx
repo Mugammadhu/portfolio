@@ -46,7 +46,7 @@ const Contact = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3000/send",
+        "https://portfolio-bz5v.onrender.com/send",
         formData
       );
       if (response.status === 200) {
